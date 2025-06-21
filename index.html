@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Vizu is a free online web app for creating and editing visuals, similar to Canva.">
+    <title>Vizu - Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="logo-container">
+            <img src="logo.png" alt="Mascot" class="logo" />
+            <img src="letters.png" alt="Vizu text" class="title" />
+        </div>
+        <img src="slogan.png" alt="Vizu slogan" class="slogan" />
+    </header>
+
+    <div class="buttons">
+        <button id="startBtn" class="btn1">Start Writing</button>
+        <a href="loginform.html" class="btn2">Log in</a>
+    </div>
+
+    <section class="projects-section">
+        <h2 class="projects-heading">Your Work</h2>
+        <div id="projectGallery" class="project-gallery"></div>
+    </section>
+
+
+    <div id="login-popup" class="popup hidden">
+        <div class="popup-content">
+            <p class="para">You must Log In or Create an Account to continue.</p>
+            <a href="loginform.html"><button class="login-btn">Log In</button></a>
+            <a href="signup.html"><button class="signup-btn">Create Account</button></a>
+            <button class="cancel-btn" onclick="closePopup()">Cancel</button>
+
+        </div>
+    </div>
+
+    <div class="action" id="userMenu" style="display: none;">
+        <div class="profile" onclick="menuToggle();">
+            <img src="logog.png" />
+        </div>
+        <div class="menu">
+            <h3>Me!<br /></h3>
+            <ul>
+                <li>
+                    <img src="Email.svg" /><a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <img src="instagram.png" /><a href="#">Follow Us</a>
+                </li>
+                <li>
+                    <img src="aboutus.png" /><a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <img src="tip.png" /><a href="#">Buy Us A Coffee</a>
+                </li>
+                <li>
+                    <img src="4.png" /><a href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector(".menu");
+            toggleMenu.classList.toggle("active");
+        }
+    </script>
+
+    <script src="home.js" type="module"></script>
+</body>
+
+</html>

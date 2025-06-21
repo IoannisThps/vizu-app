@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Vizu – your design space.">
+    <title>Welcome - Vizu</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="welcome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="logo-container">
+            <img src="logo.png" alt="Mascot" class="logo" />
+            <img src="letters.png" alt="Vizu text" class="title" />
+        </div>
+        <img src="slogan.png" alt="Vizu slogan" class="slogan" />
+    </header>
+
+    <section class="welcome-section">
+        <h2 class="welcome-heading">Welcome back, Designer!</h2>
+        <p class="welcome-text">We're excited to have you here. Ready to create something amazing today?</p>
+
+        <div class="buttons">
+            <a href="vizu.html" class="btn1">Go to Editor</a>
+            <a href="index.html" class="btn2">Back to Home</a>
+        </div>
+    </section>
+
+    <div class="action" id="userMenu" style="display: none;">
+        <div class="profile" onclick="menuToggle();">
+            <img src="logog.png" />
+        </div>
+        <div class="menu">
+            <h3>Me!<br /></h3>
+            <ul>
+                <li>
+                    <img src="instagram.png" /><a href="#">Follow Us</a>
+                </li>
+                <li>
+                    <img src="aboutus.png" /><a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <img src="tip.png" /><a href="#">Buy Us A Coffee</a>
+                </li>
+                <li>
+                    <img src="4.png" /><a href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector(".menu");
+            toggleMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

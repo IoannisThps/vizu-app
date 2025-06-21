@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizu - Login</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="loginform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="main.js" defer type="module"></script>
+    <script type="module" src="login.js" defer></script>
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <div class="form-card">
+            <div class="form-header">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Mascot" class="logo" />
+                    <img src="letters.png" alt="Vizu text" class="title" />
+                </div>
+                <img src="slogan.png" alt="Slogan" class="slogan" />
+            </div>
+
+            <h2>Log in to Vizu</h2>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required />
+
+                <button type="submit" id="submit">Login</button>
+
+                <p class="signup-msg">Don't have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
